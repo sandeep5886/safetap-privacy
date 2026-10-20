@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SafeTap — Privacy Policy</title>
+<title>SafeSutra — Privacy Policy</title>
 <style>
   :root {
     color-scheme: light;
@@ -61,12 +61,13 @@
 <body>
 <main>
 
-<h1>SafeTap — Privacy Policy</h1>
-<p class="effective">Last updated: 6 October 2026</p>
+<h1>SafeSutra — Privacy Policy</h1>
+<p class="effective">Last updated: 20 October 2026</p>
 
-<p>SafeTap is a daily family check-in app. One tap each day tells your family you're safe. If you miss your check-in deadline, your family is alerted. This policy explains what information we collect, why, and what you can do about it.</p>
+<p>SafeSutra is a daily family check-in app. One tap each day tells your family you're safe. If you miss your check-in deadline, your family is alerted. This policy explains what information we collect, why, and what you can do about it.</p>
 
-<p><strong>Developer:</strong> Sandeep Srivastava, India<br>
+<p><strong>App:</strong> SafeSutra (package <code>com.safesutra.family</code>)<br>
+<strong>Developer:</strong> Sandeep Srivastava, India<br>
 <strong>Contact:</strong> <a href="mailto:Vyaparhuman@gmail.com">Vyaparhuman@gmail.com</a></p>
 
 <h2>1. Information we collect</h2>
@@ -75,7 +76,7 @@
 <ul>
   <li>Your phone number, shown to your family members so they can reach you. We don't use it for sign-in or to send you messages.</li>
   <li>Your name, and optionally your city and relationship to family members shown on family rows.</li>
-  <li>An email address is stored in our database but is not collected in the app.</li>
+  <li>If you sign in with Google or with an email code, we collect and store your email address to sign you in and to let you sign back into the same account.</li>
 </ul>
 
 <p><strong>Check-ins and family</strong></p>
@@ -92,8 +93,9 @@
 
 <p><strong>Location (only during an SOS)</strong></p>
 <ul>
-  <li>Your location is captured only when you trigger an SOS and confirm it. Sharing stops automatically after 30 minutes.</li>
+  <li>Your location is captured only when you trigger an SOS and confirm it. Live sharing with your family stops automatically after 30 minutes.</li>
   <li>We do not track your location continuously.</li>
+  <li>Where you were when the SOS started, and your last known location when it ended, are kept as part of that SOS's record for up to 90 days (the same period your check-in history is kept), so your family can look back at it. After that, this location data is permanently cleared.</li>
 </ul>
 
 <p><strong>Device and app data</strong></p>
@@ -113,11 +115,10 @@
 <p>We do not sell your personal information. We do not use it for advertising.</p>
 
 <h2>3. Who we share information with</h2>
-<p>We use these service providers to run SafeTap:</p>
+<p>We use these service providers to run SafeSutra:</p>
 <ul>
-  <li><strong>Supabase</strong> – database, authentication and file storage.</li>
+  <li><strong>Supabase</strong> – database, authentication, file storage, and our alert scheduler and SOS server.</li>
   <li><strong>Firebase Cloud Messaging</strong> (Google) – push notifications.</li>
-  <li><strong>Railway</strong> – hosts our alert scheduler and SOS server.</li>
   <li><strong>PostHog</strong> – product analytics (EU region).</li>
   <li><strong>Sentry</strong> – crash and error monitoring.</li>
 </ul>
@@ -127,7 +128,7 @@
 <ul>
   <li>Check-in history is kept for up to 90 days, then removed.</li>
   <li>Medical information and emergency contacts are kept until you remove them or delete your account.</li>
-  <li>Location is kept only as long as an SOS alert needs it.</li>
+  <li>SOS location data (where it started and where it ended) is kept for up to 90 days, then automatically cleared. The fact that an SOS happened, and who in your family acknowledged it and when, stays as part of your account's history.</li>
 </ul>
 
 <h2>5. Your choices</h2>
@@ -138,11 +139,11 @@
 </ul>
 
 <h2>6. Deleting your account</h2>
-<p>You can request deletion of your account and personal data at any time by emailing <a href="mailto:Vyaparhuman@gmail.com">Vyaparhuman@gmail.com</a> from the phone number registered with SafeTap.</p>
-<p>We will delete your account and personal data within 30 days of your request, except where we must keep data for legal reasons.</p>
+<p><strong>In the app:</strong> go to <strong>Profile → Delete account</strong>. Your account and personal data are deleted straight away.</p>
+<p><strong>Without the app:</strong> request deletion at <a href="https://ecjlwlqcqtsrmkwypkge.supabase.co/functions/v1/deletion-request">https://ecjlwlqcqtsrmkwypkge.supabase.co/functions/v1/deletion-request</a>. We send a code to the email address on your account, and delete the account only after you enter that code. You can also email <a href="mailto:Vyaparhuman@gmail.com">Vyaparhuman@gmail.com</a>. Requests made this way are completed within 30 days, except where we must keep data for legal reasons.</p>
 
 <h2>7. Children</h2>
-<p>SafeTap is intended for adults. We don't knowingly collect information from children under 18.</p>
+<p>SafeSutra is intended for adults. We don't knowingly collect information from children under 18.</p>
 
 <h2>8. Security</h2>
 <p>We protect your data with access controls, row-level security in our database, and encryption in transit. Medical information is protected by these controls and by the database's standard encryption at rest.</p>
